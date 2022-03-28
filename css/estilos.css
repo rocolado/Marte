@@ -1,0 +1,738 @@
+* {
+    color: rgb(0, 0, 0);
+    margin: 0px;
+}
+
+/* header */
+
+header {
+    text-align: center;
+    padding: 3% 0%;
+}
+
+header a img {
+    width: 55%;
+    text-align: center;
+}
+
+/* nav */
+
+nav {
+    text-align: center;
+    margin-bottom: 13%;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0%;
+}
+
+nav ul li .linksNav {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+nav ul li:nth-child(2) {
+    margin: 1% 0%;
+}
+
+nav ul li .linksNav:hover {
+    color: rgb(189, 55, 0);
+}
+
+nav ul li .active {
+    font-weight: 700;
+    border-bottom: 3px solid black;
+}
+
+/* main shared*/
+
+main {
+    width: 93%;
+    font-family: 'Alegreya', sans-serif;
+    margin: auto;
+}
+
+main h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 5% 0% 3% 0%;
+}
+
+main h2 {
+    font-size: 3.1rem;
+    font-weight: 700;
+    margin: 5% 0%;
+}
+
+main .textoBase {
+    font-size: 1.6rem;
+    line-height: 2.3rem;
+    margin-bottom: 4%;
+}
+
+main abbr {
+    text-decoration: none;
+}
+
+/* index */
+
+main #utopiaMarciana {
+    background-color: rgb(0, 0, 0);
+    width: 100vw;
+    left: calc(-50vw + 50%);
+    position: relative; 
+}
+
+main #utopiaMarciana h1 {
+    font-size: 3.4rem;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    z-index: 2;
+    padding: 8% 0% 0% 3%;
+    margin: 0%;
+}
+
+main #utopiaMarciana > p em {
+    font-size: 2.2rem;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    z-index: 3;
+    padding: 23% 0% 0% 3%;
+}
+
+main #utopiaMarciana #imgMarte {
+    text-align: right;
+}
+
+main #utopiaMarciana #imgMarte img {
+    width: 50%;
+    padding-top: 13%;
+}
+
+main #misiones h2 {
+    margin-bottom: 0%;
+}
+
+main #misiones #subtituloMisiones {
+    font-size: 2.2rem;
+    margin-bottom: 2%;
+}
+
+main #misiones #exploracionMarte {
+    display: flex;
+    flex-direction: column;
+}
+
+main section #exploracionMarte img {
+    width: 100%;
+}
+
+main #misiones #exploracionMarte .textosMisiones {
+    padding-bottom: 6%;
+}
+
+main section #exploracionMarte .textosMisiones .linksMisiones {
+    margin: 2% 0%;
+}
+
+main section #exploracionMarte .textosMisiones .linksMisiones a {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(189, 55, 0);
+    text-decoration: none;
+}
+
+main section #exploracionMarte .textosMisiones .linksMisiones a:hover {
+    color: rgb(0, 0, 0);
+}
+
+/* mars 2020 */
+
+main #mars2020 > ul {
+    list-style: square;
+}
+
+main #mars2020 figure .video-container-mars {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56%;
+}
+
+main #mars2020 figure .video-container-mars iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+}
+
+main #mars2020 figure figcaption {
+    font-size: 1.1rem;
+    text-align: center;
+    margin-top: 3%;
+}
+
+main aside {
+    margin-top: 8%;
+}
+
+main aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+main aside p,
+main aside li a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+}
+
+main aside p {
+    margin-bottom: 3%;
+}
+
+main aside li a {
+    color: rgb(189, 55, 0);
+    text-decoration: none;
+}
+
+main aside li #misionMars {
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
+
+/* ciencia ficcion */
+
+main #cienciaFiccion #obrasCienciaFiccion .containerObra {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4%;
+}
+
+main #cienciaFiccion #obrasCienciaFiccion .containerObra > div:nth-child(1),
+main #cienciaFiccion #obrasCienciaFiccion .containerObra > div:nth-child(2) {
+    background-color: rgba(0,0,0,0.1);
+    padding: 3%;
+}
+
+main #cienciaFiccion #obrasCienciaFiccion .containerObra .tituloObra {
+    font-size: 3.8rem;
+    line-height: 4rem;
+    font-weight: 700;
+}
+
+main #cienciaFiccion #obrasCienciaFiccion .containerObra .resumenObra {
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    font-style: italic;
+}
+
+main #cienciaFiccion #obrasCienciaFiccion .containerObra .autorObra {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-top: 3%;
+}
+
+main #cienciaFiccion #obrasCienciaFiccion .containerObra .autorObra::before {
+    content: "";
+    background-color: rgb(189, 55, 0);
+    width: 35px;
+    height: 6px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+main #cienciaFiccion #obrasCienciaFiccion .containerObra .fotoAutor img {
+    width: 100%;
+}
+
+/* marte en el cine */
+
+main #marteEnElCine #peliculasMarte {
+    display: flex;
+    flex-direction: column;
+}
+
+main #marteEnElCine #peliculasMarte > figure {
+    text-align: center;
+    background-color: rgba(0,0,0,0.1);
+    margin-bottom: 5%;
+}
+
+main #marteEnElCine #peliculasMarte > figure .video-container-pelicula {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56%;
+}
+
+main #marteEnElCine #peliculasMarte > figure .video-container-pelicula iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+}
+
+main #marteEnElCine #peliculasMarte > figure figcaption {
+    font-size: 1.6rem;
+    padding: 2% 0% 6% 0%;
+}
+
+main #marteEnElCine #peliculasMarte > figure figcaption .nombrePelicula {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    margin-top: 8%;
+}
+
+footer #logoFooter {
+    text-align: center;
+    padding: 10% 0%;
+}
+
+footer #logoFooter img {
+    width: 55%;
+}
+
+footer .linksFooter {
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+footer .linksFooter:hover {
+    color: rgb(189, 55, 0);
+}
+
+footer form {
+    padding: 0% 3%;
+}
+
+footer form fieldset {
+    border: 1px solid rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding: 0%;
+}
+
+footer form fieldset legend,
+footer form fieldset legend em {
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+}
+
+footer form fieldset p {
+    padding-top: 5%;
+}
+
+footer form fieldset #correo {
+    width: 100%;
+    height: 2rem;
+    font-size: 1.3rem;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    padding-bottom: 2%;
+}
+
+footer form fieldset #correo::placeholder {
+    font-size: 1.3rem;
+    color: rgb(255, 255, 255, 0.4);
+}
+
+footer form #checkbox {
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+    margin-top: 3%;
+}
+
+footer form #checkbox input[type=checkbox] {
+    margin-right: 1%;
+    transform: scale(1.3);
+}
+
+footer form button {
+    font-size: 1.2rem;
+    padding: 2% 3%;
+    margin: 5% 0% 10% 0%;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0%;
+}
+
+footer ul li:nth-child(2) {
+    padding: 0% 3%;
+}
+
+footer #copyright {
+    padding: 5% 0%;
+}
+
+footer #copyright p {
+    font-size: 0.9rem;
+    color: rgb(255, 255, 255);
+}
+
+footer #copyright p:nth-child(2) {
+    margin-top: 1%;
+}
+
+footer abbr {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+/* media queries */
+
+@media (min-width: 750px) {
+    /* index */
+
+    main #utopiaMarciana h1 {
+        padding: 5% 0% 0% 3%;
+    }
+    
+    main #utopiaMarciana > p em {
+        padding: 16% 0% 0% 3%;
+    }
+    
+    main #utopiaMarciana #imgMarte img {
+        padding-top: 5%;
+    }
+}
+
+@media (min-width: 800px) {
+    /* header */
+
+    header a img{
+        width: 40%;
+    }
+
+    /* nav */
+
+    nav {
+        margin-bottom: 8%;
+    }
+
+    /* index */
+
+    main #utopiaMarciana h1 {
+        font-size: 3.8rem;
+        padding: 5% 0% 0% 3%;
+    }
+    
+    main #utopiaMarciana > p em {
+        font-size: 2.6rem;
+        padding: 16% 0% 0% 3%;
+    }
+    
+    main #utopiaMarciana #imgMarte img {
+        padding-top: 2%;
+    }
+
+    /* footer */
+
+    footer #logoFooter {
+        padding: 5% 0%;
+    }
+
+    footer #logoFooter img {
+        width: 35%;
+    }
+
+    footer form button {
+        padding: 1% 2%;
+        margin: 4% 0% 7% 0%;
+    }
+}
+
+@media (min-width: 992px) {
+    /* header */
+    header, nav {
+        width: 72%;
+        margin: auto;
+        text-align: left;
+    }
+
+    header {
+        padding: 1% 0%;
+    }
+
+    header a img{
+        width: 45%;
+    }
+
+    /* nav */
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    nav ul li:nth-child(2) {
+        margin: 0% 4%;
+    }
+
+    /* main shared*/
+
+    main {
+        width: 72%;
+    }
+
+    /* index */
+
+    main #utopiaMarciana {
+        margin-top: 5%;
+    }
+
+    main #utopiaMarciana h1 {
+        font-size: 4.3rem;
+        padding: 3% 0% 0% 14%;
+    }
+    
+    main #utopiaMarciana > p em {
+        padding: 13% 0% 0% 14%;
+    }
+
+    main #utopiaMarciana #imgMarte img {
+        width: 40%;
+        padding-top: 0%;
+    }
+
+    main #misiones #exploracionMarte {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    main #misiones #exploracionMarte > div:nth-child(2n+1) {
+        background-color: rgba(0,0,0,0.1);
+    }
+
+    main #misiones #exploracionMarte .textosMisiones {
+        padding: 0% 4% 10% 4%;
+    }
+
+    /* mars 2020 */
+
+    main #container {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
+
+    main #container #mars2020:nth-child(1) {
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
+    }
+
+    main #container aside:nth-child(2) {
+        grid-row: 1 / 3;
+    }
+
+    main aside {
+        margin-top: 30%;
+    }
+
+    /* ciencia ficcion */
+
+    main #cienciaFiccion #obrasCienciaFiccion .containerObra {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-gap: 3%;
+        margin-bottom: 3%;
+    }
+
+    main #cienciaFiccion #obrasCienciaFiccion .containerObra .fotoAutor img {
+        max-width: 100%;
+        display: block;
+    }
+
+    main #cienciaFiccion #obrasCienciaFiccion .containerObra > div:nth-child(1),
+    main #cienciaFiccion #obrasCienciaFiccion .containerObra > div:nth-child(2) {
+        padding: 5%;
+    }
+
+    main #cienciaFiccion #obrasCienciaFiccion .containerObra .tituloObra {
+        font-size: 2.2rem;
+        line-height: 3rem;
+    }
+
+    main #cienciaFiccion #obrasCienciaFiccion .containerObra .resumenObra {
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+
+    main #cienciaFiccion #obrasCienciaFiccion .containerObra .autorObra {
+        font-size: 1.4rem;
+    }
+
+    main #cienciaFiccion #obrasCienciaFiccion .containerObra .autorObra::before {
+        width: 30px;
+        height: 4px;
+    }
+
+    /* marte en el cine */
+
+    main #marteEnElCine #peliculasMarte {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0% 3%;
+    }
+
+    main #marteEnElCine #peliculasMarte > figure {
+        margin-bottom: 10%;
+    }
+
+    /* footer */
+
+    footer #logoFooter {
+        padding: 5% 0%;
+    }
+
+    footer #logoFooter img {
+        width: 30%;
+    }
+}
+
+@media (min-width: 1300px) {
+    /* header */
+
+    header a img{
+        width: 30%;
+    }
+
+    /* nav */
+
+    nav ul li .linksNav {
+        font-size: 2rem;
+    }
+
+    /* main shared */
+
+    main h2 {
+        margin: 3% 0%;
+    }
+
+    /* index */
+
+    main #utopiaMarciana h1 {
+        font-size: 6rem;
+        padding: 3% 0% 0% 14%;
+    }
+    
+    main #utopiaMarciana > p em {
+        font-size: 3rem;
+        padding: 15% 0% 0% 14%;
+    }
+
+    main #utopiaMarciana #imgMarte img {
+        width: 35%;
+    }
+
+    /* ciencia ficcion */
+
+    main #cienciaFiccion #obrasCienciaFiccion .containerObra .tituloObra {
+        font-size: 2.6rem;
+        line-height: 3.2rem;
+    }
+
+    main #cienciaFiccion #obrasCienciaFiccion .containerObra .resumenObra {
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+    }
+
+    /* footer */
+
+    footer #logoFooter {
+        padding: 3% 0%;
+    }
+
+    footer #logoFooter img {
+        width: 20%;
+    }
+
+    footer form {
+        padding: 0% 31%;
+    }
+
+    footer form fieldset legend,
+    footer form fieldset legend em {
+        font-size: 2.5rem;
+    }
+
+    footer form fieldset p {
+        padding-top: 7%;
+    }
+
+    footer form fieldset #correo {
+        font-size: 2rem;
+        padding-bottom: 3%;
+    }
+    
+    footer form fieldset #correo::placeholder {
+        font-size: 2rem;
+    }
+
+    footer ul li:nth-child(2) {
+        padding: 0% 2%;
+    }    
+
+    footer #copyright {
+        padding: 2% 0% 4% 0%;
+    }
+}
+
+@media (min-width: 1500px) {
+    /* index */
+    
+    main #utopiaMarciana h1 {
+        font-size: 7.6rem;
+    }
+    
+    main #utopiaMarciana > p em {
+        font-size: 4rem;
+        padding: 13% 0% 0% 14%;
+    }
+
+    /* ciencia ficcion */
+
+    main #cienciaFiccion #obrasCienciaFiccion .containerObra > div:nth-child(2) {
+        padding: 3%;
+    }
+
+    main #cienciaFiccion #obrasCienciaFiccion .containerObra .tituloObra {
+        font-size: 3.6rem;
+        line-height: 3.8rem;
+    }
+
+    main #cienciaFiccion #obrasCienciaFiccion .containerObra .resumenObra {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    main #cienciaFiccion #obrasCienciaFiccion .containerObra .autorObra {
+        font-size: 1.8rem;
+    }
+
+    main #cienciaFiccion #obrasCienciaFiccion .containerObra .autorObra::before {
+        width: 35px;
+        height: 6px;
+    }
+}
